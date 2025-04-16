@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* General body and app layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* App container styling */
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+   
+  /* Main content section styling */
+  .content {
+    padding: 30px;
+    flex: 1;
   }
-}
+  
+  .headhead {
+    color :white;
+  }
+  /* Events section */
+  .events-section {
+    text-align: center;
+  }
+  
+  .events-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .event-details {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .event-details h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-details p {
+    margin: 5px 0;
+  }
+  
+  .book-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Booking section */
+  .booking-section {
+    color: white;
+  }
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .booking-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Confirmation section */
+  .confirmation {
+    text-align: center;
+  }
+  
+  .confirmation h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation p {
+    font-size: 1.25rem;
+  }
+  
+  .confirmation button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirmation button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
